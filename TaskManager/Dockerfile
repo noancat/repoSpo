@@ -11,6 +11,7 @@ RUN gem install bundler:2.1.4
 
 RUN mkdir $RAILS_ROOT
 WORKDIR $RAILS_ROOT
+
 COPY Gemfile Gemfile.lock  ./
 RUN bundle install --jobs 5
 
